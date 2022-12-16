@@ -1,0 +1,63 @@
+.landing-hero {
+    display: grid;
+    grid-template-columns: 100%;
+    color: white;
+    img,>div {
+        grid-area: 1/1;
+    }
+    > div {
+        font-size: var(--gutter);
+        padding: 1em;
+        align-self: end;
+        position: relative;
+
+        svg {
+            top: 1em;
+            position: absolute;
+            right: 50%;
+            width: 10rem;
+            aspect-ratio: 1/1;
+            will-change: transform;
+            animation: rotation 8s linear 0s infinite forwards;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 8.75rem;
+        line-height: 1.02;
+        margin: 0 0 0.45em;
+    }
+    h3 {
+        font-size: 2.875rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 925px) {
+        h1 {
+            font-size: 10vw;
+        }
+        h3 {
+            font-size: 6vw;
+        }
+
+        > div svg {
+            right: var(--gutter);
+            top: var(--gutter);
+            width: 20vw;
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,9 @@
+<article class='color-stack' >
+    <div class='colors'>
+        {% for item in fields.main_colors %}
+            <div style='--color: {{item.color}};--text: {{item.text}};'>
+                <h4>{{item.name}} <span>{{item.color}}</span></h4>
+            </div>
+        {% endfor %}
+    </div>
+</article>

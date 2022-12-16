@@ -1,0 +1,15 @@
+<nav>
+    {% include "logo.twig" %}
+    {% include "menu.twig" with {
+        menu: menu.items
+    } %}
+    {% if menu.creative_assets.show %}
+        <a href='{{menu.creative_assets.link}}' class='collections'>
+            {% do action('inline_file', theme.link ~ '/dist/images/collection.svg') %}
+            {{__('Creative assets', 'crowd')}}
+        </a>
+    {% endif %}
+    <a href='{{fn("get_search_link", " ")}}' class='search'>
+        {% do action('inline_file', theme.link ~ '/dist/images/Search icon.svg') %}
+    </a>
+</nav>

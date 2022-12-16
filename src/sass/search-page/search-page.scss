@@ -1,0 +1,13 @@
+@import './form';
+.text-body {
+    background-color: var(--beige);
+}
+.list {
+    max-width: var(--narrow);
+    margin: 0 auto;
+    padding: var(--gutter) 0;
+    h2 {
+        margin-top: 0;
+    }
+}
+@import './list';

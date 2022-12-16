@@ -2,7 +2,12 @@
 	<ul>
 	{% for item in menu %}
 		<li class="{{item.classes | join(' ')}}">
-			<a href="{{item.get_link}}">{{item.title}}</a>
+			<a href="{{item.get_link}}">
+				{{item.title}}
+				{% if item.get_children %}
+					{% do action('inline_file',theme.link ~ '/dist/images/chevron-down.svg') %}
+				{% endif %}
+			</a>
 			{% include "menu.twig" with {'menu': item.get_children} %}
 		</li>
 	{% endfor %}

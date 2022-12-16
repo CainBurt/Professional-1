@@ -1,0 +1,51 @@
+.nav-block {
+    background-color: var(--beige);
+    padding: var(--gutter);
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: calc(2 * var(--gutter));
+
+    &:has(> div:last-child) {
+        justify-content: flex-start;
+    }
+    &:has(> div:first-child) {
+        justify-content: flex-end;
+    }
+
+    > div {
+        flex: 0 0 460px;
+        display: flex;
+        flex-flow: column;
+        padding-right: var(--gutter);
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    h2 {
+        margin: 0 0 0.4em;
+        position: relative;
+        svg {
+            position: absolute;
+            bottom: 0.9em;
+            right: -5.5rem;
+            width: 11rem;
+            height: auto;
+        }
+    }
+
+    img {
+        flex: 1 1 0;
+        width: 400px;
+        max-width: 700px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 svg {
+            right: 0;
+            width: 4rem;
+        }
+    }
+}

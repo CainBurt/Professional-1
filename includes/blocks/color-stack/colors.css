@@ -1,0 +1,25 @@
+.color-stack {
+    font-size: 1.5rem;
+}
+
+.color-stack h4 span {
+    text-transform: uppercase;
+}
+
+.color-stack .colors {
+    display: flex;
+    gap: 1rem;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+.color-stack .colors > div {
+    background-color: var(--color);
+    color: var(--text);
+    border-radius: 0.42rem;
+    padding: 1em 1.25em;
+}
+.color-stack .colors > div h4 {
+    margin: 0;
+}

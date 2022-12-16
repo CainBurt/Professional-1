@@ -1,0 +1,122 @@
+.page-links {
+    background-color: black;
+    color: var(--beige);
+    padding: 4.625rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7.8rem;
+    a {
+        text-decoration: none;
+        font-size: 3.5rem;
+        font-family: 'Sombra', var(--system);
+        line-height: 1;
+        span {
+            font-size: 1.5rem;
+            font-family:'neue-haas-grotesk-display', var(--system);
+        }
+        i {
+            float: left;
+            line-height: 2;
+        }
+        &:first-child {
+            i {
+                float: right;
+            }
+        }
+    }
+
+    divider {
+        width: 1px;
+        height: 125px;
+        background-color: white;
+    }
+    spacer,a {
+        flex: 1 1 0;
+    }
+}
+
+.page-hero {
+    display: grid;
+    grid-template-columns: 100%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    img,h1 {
+        grid-area: 1/1;
+    }
+    h1 {
+        align-self: center;
+        width: var(--narrow);
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: var(--h2);
+        line-height: var(--h2-lh);
+        font-weight: 900;
+    }
+    figure {
+        position: absolute;
+        top: var(--pos-y);
+        left: var(--pos-x);
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+main {
+    width: var(--narrow);
+    max-width: 100%;
+    margin: 0;
+}
+
+.inner {
+    display: flex;
+    background-color: var(--beige);
+    padding: 5.75rem var(--gutter) 5.75rem;
+    position: relative;
+    z-index: 0;
+}
+
+aside {
+    // flex: 0 0 calc((100vw - var(--narrow)) / 2);
+    width: calc(((100vw - var(--narrow)) / 2) - var(--gutter));
+    position: sticky;
+    top: 3rem;
+    left: 0;
+    padding: 0 var(--gutter) 0 0;
+
+    a {
+        text-decoration: none;
+        @media (hover:hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    > ul > li {
+        padding: 1ex 0;
+        > a {
+            font-weight: 750;
+        }
+        &:not(:first-child) {
+            border-top: 1px solid black;
+        }
+        &.current-menu-item > a {
+            text-decoration: underline;
+        }
+        ul {
+            li {
+                padding: 1ex 0;
+            }
+        }
+    }
+}

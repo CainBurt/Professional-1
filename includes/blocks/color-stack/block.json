@@ -1,0 +1,17 @@
+{
+    "name": "color-stack",
+    "title": "Color Stack",
+    "description": "Stack of secondary colors",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "apiVersion": 2,
+    "keywords": [
+        "color",
+        "stack"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "color-stack.php",
+        "postTypes": [ "page", "post" ]
+    }
+}

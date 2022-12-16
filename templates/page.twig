@@ -1,7 +1,13 @@
 {% extends "base.twig" %}
 
 {% block content %}
+	{% include "page/hero.twig" %}
+	<div class='inner'>
+		{% include "page/navigation.twig" %}
+		<main>
+			{{post.content}}
+		</main>
+	</div>
+    {% include "page/footer-links.twig" %}
 
-	{{post.content}}
-	
 {% endblock %}

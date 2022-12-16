@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    {% include "landing-page/hero.twig" %}
+
+    <article class='nav-block'>
+        {% include "image.twig" with {
+            image: theme.link ~ '/dist/images/image 49.png'
+        } %}
+        <div>
+            <h2>{{__('Who on<br />earth<br />are we?!','crowd')}}{% do action('inline_file',theme.link ~ '/dist/images/arrowgif 2.svg') %}</h2>
+            <p>{{__("We're Spreadshop. And we're on the planet to spread positive change.", 'crowd')}}</p>
+            <a class='button' href='{{site.link}}/our-story'>{{__('Read story','crowd')}}</a>
+        </div>
+    </article>
+
+    <article class='nav-block'>
+        <div>
+            <h2>{{__("What's<br />the vibe?",'crowd')}}{% do action('inline_file',theme.link ~ '/dist/images/waving 2.svg') %}</h2>
+            <p>{{__("We're going to Spreadchange in style!<br />Check it out...", 'crowd')}}</p>
+            <a class='button' href='{{site.link}}/our-identity/logo'>{{__('View identity','crowd')}}</a>
+        </div>
+        {% include "image.twig" with {
+            image: theme.link ~ '/dist/images/Union 2 2.png'
+        } %}
+        
+    </article>
+
+    {% include "landing-page/downloads.twig" %}
+    
+    {% include "page/footer-links.twig" %}
+{% endblock %}

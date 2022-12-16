@@ -1,0 +1,17 @@
+{
+    "name": "color-grid",
+    "title": "Color Grid",
+    "description": "Grid of main colors",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "apiVersion": 2,
+    "keywords": [
+        "color",
+        "grid"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "color-grid.php",
+        "postTypes": [ "page", "post" ]
+    }
+}

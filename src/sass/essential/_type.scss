@@ -1,0 +1,52 @@
+html {
+    font-size: clamp(14px,1.11vw,16px);
+    font-family: neue-haas-grotesk-display,sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
+
+body {
+    font-size: 1rem;
+}
+
+h1,h2,h3 {
+    font-family: 'Sombra', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: var(--h2-lh);
+}
+
+h4 {
+    font-size: var(--h4);
+    line-height: var(--h4-lh);
+    font-weight: 400;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size:1.25rem;
+    padding: 1em 2.35em;
+    text-align: center;
+    width: max-content;
+    text-decoration: none;
+    transition-property: border-radius, background-color;
+
+    @media (hover: hover) {
+        &:hover {
+            border-radius: 0.5em;
+            background-color: var(--orange);
+        }
+    }
+    &:focus-within {
+        outline: 2px solid var(--orange);
+        outline-offset: 1px;
+        border-radius: 0.5em;
+        background-color: var(--orange);
+    }
+}

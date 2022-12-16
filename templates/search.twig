@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+{% block content %}
+	{% include "page/hero.twig" %}
+    {{fn('get_search_form')}}
+    <div class='list'>
+        {% if query and query != ' ' %}
+            <h2>{{__('Search results for', 'crowd')}} "{{query}}"</h2>
+            {% for item in posts %}
+                <article>
+                    <a href='{{item.link}}'>
+                        <div>
+                            <h3>{{item.parent ? item.parent.title : item.title}}</h3>
+                            {% if item.parent %}
+                                <p>{{item.title}}</p>
+                            {% endif %}
+                        </div>
+                        {% if item.get_field('tagmark') %}
+                            {% do action('inline_file',item.get_field('tagmark').image.url) %}
+                        {% endif %}
+                    </a>
+                </article>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

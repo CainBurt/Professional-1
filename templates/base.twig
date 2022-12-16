@@ -10,12 +10,11 @@
 		{{ options.body_start_scripts }}
 		<header class="header" >
 			{% block header %}
-				
+				{% include "header-navigation.twig" %}
 			{% endblock %}
 		</header>
 
 		<section id="content" role="main">
-			{% if title %}<h1>{{title}}</h1>{% endif %}
 			<div class="wrapper text-body">
 				{% block content %}
 					Sorry, no content
@@ -29,16 +28,16 @@
 		</section>
 
 		{% block footer %}
-			{% include "social-share.twig" %}
+			{# {% include "social-share.twig" %}
 			<footer id="footer">
 				<div class="wrapper">
 					{% include 'footer.twig' %}
 				</div>
-			</footer>
+			</footer> #}
 
-			{% if not allow_ga and not block_ga %}
+			{# {% if not allow_ga and not block_ga %}
 				{% include "tracking.twig" %}
-			{% endif %}
+			{% endif %} #}
 			
 
 			<script type='text/javascript'>

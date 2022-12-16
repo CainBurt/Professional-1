@@ -1,0 +1,32 @@
+:root {
+    --beige: #E6DACE;
+    --orange: #FF8256;
+}
+
+html body {
+    --wp--preset--font-size--small: 1rem;
+    --wp--preset--font-size--medium: 1.5rem;
+    --wp--preset--font-size--large: 2rem;
+    --wp--preset--font-size--x-large: 3rem;
+}
+
+:root {
+    --gutter: 4.375rem;
+    --narrow: 880px;
+    --h2: 6.25rem;
+    --h2-lh: 1.02;
+    --h4: 1.5rem;
+    --h4-lh:1.33;
+
+    @media screen and (max-width: 925px) {
+        --h2: 4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        --gutter: 2rem;
+    }
+}
+
+:root {
+    --system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

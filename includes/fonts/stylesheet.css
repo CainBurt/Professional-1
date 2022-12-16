@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Light.woff2') format('woff2'),
+        url('Sombra-Light.woff') format('woff'),
+        url('Sombra-Light.svg#Sombra-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Black.woff2') format('woff2'),
+        url('Sombra-Black.woff') format('woff'),
+        url('Sombra-Black.svg#Sombra-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Bold.woff2') format('woff2'),
+        url('Sombra-Bold.woff') format('woff'),
+        url('Sombra-Bold.svg#Sombra-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Regular.woff2') format('woff2'),
+        url('Sombra-Regular.woff') format('woff'),
+        url('Sombra-Regular.svg#Sombra-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Medium.woff2') format('woff2'),
+        url('Sombra-Medium.woff') format('woff'),
+        url('Sombra-Medium.svg#Sombra-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra Poster';
+    src: url('Sombra-Poster.woff2') format('woff2'),
+        url('Sombra-Poster.woff') format('woff'),
+        url('Sombra-Poster.svg#Sombra-Poster') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sombra';
+    src: url('Sombra-Thin.woff2') format('woff2'),
+        url('Sombra-Thin.woff') format('woff'),
+        url('Sombra-Thin.svg#Sombra-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,10 @@
+<article class='color-grid' style='--text-color: {{fields.background_color.text_color}};--background-color: {{fields.background_color.color}};'>
+    <h4>{{fields.background_color.name}} <span>{{fields.background_color.color}}</span></h4>
+    <div class='colors'>
+        {% for item in fields.main_colors %}
+            <div style='--color: {{item.color}};--text: {{item.text}};'>
+                <h4>{{item.name}} <span>{{item.color}}</span></h4>
+            </div>
+        {% endfor %}
+    </div>
+</article>

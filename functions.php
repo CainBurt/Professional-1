@@ -95,6 +95,7 @@ class StarterSite extends TimberSite {
         add_theme_support( 'post-formats' );
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'menus' );
+        add_theme_support( 'custom-logo' );
 
         // Timber filters
         add_filter( 'timber_context', array( $this, 'add_to_context' ) );
@@ -132,6 +133,7 @@ class StarterSite extends TimberSite {
         add_action( 'init', array( $this, 'register_post_types' ) );
         add_action( 'init', array( $this, 'register_taxonomies' ) );
         add_action( 'init', array( $this, 'register_acf_blocks' ) );
+        add_action( 'after_setup_theme', array($this,'register_menus') );
 
         add_action( 'wp_enqueue_scripts', array( $this, 'assets' ) );
 
@@ -180,11 +182,19 @@ class StarterSite extends TimberSite {
         }
         // require_once custom acf blocks here
         
-        // require_once('includes/blocks/example.php');
+        register_block_type( dirname(__FILE__) . '/includes/blocks/color-grid/block.json' );
+        register_block_type( dirname(__FILE__) . '/includes/blocks/color-stack/block.json' );
+    }
+
+    function register_menus() {
+        register_nav_menu( 'menu', __( 'Global Menu', 'spread' ) );
+        register_nav_menu( 'downloads', __( 'Downloads', 'spread' ) );
     }
 
     function add_to_context( $context ) {
-        $context['menu'] = new TimberMenu('Global Header Navigation');
+        $context['menu'] = new TimberMenu('menu');
+        $context['downloads'] = new TimberMenu('downloads');
+        $context['logo'] = new TimberImage(get_theme_mod( 'custom_logo' ));
         $context['site'] = $this;
         if (function_exists('get_fields')) {
             $context['options'] = get_fields('option');
@@ -738,6 +748,11 @@ function custom_render_block_core_image (
         $data['image'] = $block['attrs']['id'];
         $data['class'] = $block['attrs']['className'] . ' wp-block-image';
         $data['figure'] = true;
+
+        $html = $block['innerHTML'];
+        preg_match_all('/<figcaption(.*?)>((.*?))<\/figcaption>/',$html,$matches);
+        $caption = $matches[0][0];
+        $data['caption'] = $caption;
 
 		return Timber::compile('image.twig',$data);
 	}

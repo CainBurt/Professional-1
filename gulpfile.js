@@ -31,6 +31,16 @@ const gulp = require('gulp'),
                 name: 'deferred.css',
                 dist: 'dist/styles'
             },
+            landingPage: {
+                src: 'src/sass/landing-page/**/*.scss',
+                name: 'landing-page.css',
+                dist: 'dist/styles'
+            },
+            searchPage: {
+                src: 'src/sass/search-page/**/*.scss',
+                name: 'search-page.css',
+                dist: 'dist/styles'
+            }
         },
         js: {
             src: [

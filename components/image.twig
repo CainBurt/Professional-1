@@ -63,6 +63,9 @@
         alt='{{ img.alt }}'
     />
 </picture>
+{% if caption %}
+    {{caption}}
+{% endif %}
 
 {% if figure %}
     </figure>

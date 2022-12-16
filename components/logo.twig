@@ -1,4 +1,4 @@
-<a href='{{ site.url }}' title='{{ site.title }} Logo'>
+<a href='{{ site.url }}' title='{{ site.title }} Logo' class='logo'>
     {% if logo.mime_type == 'images/svg+xml' %}
         {% do action('inline_file', logo.url) %}
     {% else %}

@@ -42,7 +42,13 @@ function init() {
             })
         })
     }
+
+    console.log('lazy loaded');
 }
 
-window.addEventListener('load', init, false)
+if (document.readyState == 'complete' || document.readyState == 'interactive') {
+    init();
+} else {
+    document.addEventListener('DOMContentLoaded', init, false);
+}
 window.loadImages = () => init()

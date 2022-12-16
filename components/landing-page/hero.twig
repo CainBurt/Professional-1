@@ -1,0 +1,10 @@
+<article class='landing-hero'>
+    {% include "image.twig" with {
+        image: post.thumbnail
+    } %}
+    <div>
+        <h1>{{post.title}}</h1>
+        <h3>{{__('Introducing our brand new brand guide', 'crowd')}}</h3>
+        {% do action('inline_file', theme.link ~ '/dist/images/Frame.svg') %}
+    </div>
+</article>

@@ -1,0 +1,12 @@
+<article class='page-hero'>
+    {% if post.thumbnail %}
+        {% include "image.twig" with {
+            image: post.thumbnail
+        } %}
+    {% endif %}
+
+    <h1>{{post.tagline}}</h1>
+    <figure style='--pos-x: {{post.get_field('tagmark').x}}%;--pos-y: {{post.get_field('tagmark').y}}%;'>
+        {% do action('inline_file',post.get_field('tagmark').image.url) %}
+    </figure>
+</article>

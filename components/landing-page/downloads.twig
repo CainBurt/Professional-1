@@ -1,0 +1,16 @@
+<article class='downloads' style='--bg-image: url("{{theme.link ~ "/dist/images/Union 44.svg"}}");'>
+    <h2>{{__('Spreadchange with style','crowd')}}</h2>
+    <p>{{__('All the tools you need to build the Spreadshop vibe.','crowd')}}</p>
+    <ul>
+        {% for item in downloads.items %}
+            <li>
+                <a href='{{item.get_link}}'>
+                    <span>{{item.title}}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <p>
+        {{__("You can download our approved brand assets in various formats above.<br />These can be used in conjunction with the guidance given to produce branded materials and communications for Spreadshop.<br/><br/>Want to know more? Not a problem! Just get us on<br/><strong><a href='mailto:brand@spreadgroup.com'>brand@spreadgroup.com</a></strong>",'crowd')}}
+    </p>
+</article>

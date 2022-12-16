@@ -29,5 +29,10 @@
             {{load_gtm()}}
         {% endif %}
     {% endif %}
+    <link rel='preload' as='style' class='preload-css' href='{{theme.link}}/includes/fonts/stylesheet.css' />
+    <link rel="preload" as='style' class='preload-css' href="https://use.typekit.net/nsw6hbz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link class='preload-css' as='style' href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="preload">
     
     {{ options.head_scripts }}
