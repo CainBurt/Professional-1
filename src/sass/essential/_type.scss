@@ -36,7 +36,8 @@ h4 {
     width: max-content;
     text-decoration: none;
     transition-property: border-radius, background-color;
-
+    border-radius: 0.5em;
+    font-weight: 550;
     @media (hover: hover) {
         &:hover {
             border-radius: 0.5em;
