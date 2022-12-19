@@ -104,7 +104,7 @@ aside {
     }
 
     > ul > li {
-        padding: 1ex 0;
+        padding: 2ex 0;
         > a {
             font-weight: 750;
         }
@@ -117,6 +117,9 @@ aside {
         ul {
             li {
                 padding: 1ex 0;
+            }
+            li:first-child{
+                padding-top: 2ex;
             }
         }
     }
