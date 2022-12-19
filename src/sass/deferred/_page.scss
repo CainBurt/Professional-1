@@ -34,14 +34,18 @@
         background-color: white;
     }
 
-    a + divider + a {
+    a + divider + a{
         flex: none;
     }
-    
+
     spacer, divider + a {
-            flex: 1 1 0;
+        flex: 1 1 0;
     }
 
+    .right-spacer{
+        flex: none;
+        width: 20vw
+    }
     
 }
 
