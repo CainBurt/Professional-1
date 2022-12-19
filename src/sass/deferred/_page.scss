@@ -33,9 +33,16 @@
         height: 125px;
         background-color: white;
     }
-    spacer,a {
-        flex: 1 1 0;
+
+    a + divider + a {
+        flex: none;
     }
+    
+    spacer, divider + a {
+            flex: 1 1 0;
+    }
+
+    
 }
 
 .page-hero {
