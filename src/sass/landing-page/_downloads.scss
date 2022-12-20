@@ -33,11 +33,11 @@
             text-decoration: none;
             aspect-ratio: 296/298;
             padding: 1em;
-            font-size: 2rem;
+            font-size: 1.8rem;
             background-image: var(--bg-image);
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            transition-property: transform,color;
+            transition-property: transform;
             transition-duration: 0.3s;
             span {
                 display: inline-block;
@@ -48,12 +48,16 @@
         @media (hover: hover) {
             li:hover {
                 a {
-                    transform: translateY(50%);
+                    transform: scale(150%);
                     color: black;
                 }
                 a span {
+                    transform: scale(65%);
+                    font-weight: 800;
+                    color: #ffffff;
+                    // text-decoration: underline;
                     // transform: translateY(-600%);
-                    animation: floatUp 0.3s ease-in-out 0.1s 1 forwards;
+                    // animation: floatUp 0.3s ease-in-out 0.1s 1 forwards;
                 }
             }
         }
