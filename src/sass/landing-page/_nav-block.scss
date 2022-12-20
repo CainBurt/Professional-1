@@ -27,7 +27,7 @@
         margin: 0 0 0em;
         position: relative;
         font-weight: 800;
-        svg {
+        img {
             position: absolute;
             bottom: 0.9em;
             right: -5.5rem;
@@ -36,18 +36,18 @@
         }        
     }
 
-    .arrow{
-        svg{
-            animation: arrowMove 1s linear infinite forwards;
-        }
-    }
+    // .arrow{
+    //     svg{
+    //         animation: arrowMove 1s linear infinite forwards;
+    //     }
+    // }
 
-    .waving{
-        svg{
-            animation: waveRotate 2s linear infinite forwards;
+    // .waving{
+    //     svg{
+    //         animation: waveRotate 2s linear infinite forwards;
 
-        }
-    }
+    //     }
+    // }
 
     img {
         flex: 1 1 0;
@@ -57,35 +57,33 @@
     }
 
     @media screen and (max-width: 768px) {
-        h2 svg {
+        h2 img {
             right: 0;
             width: 4rem;
         }
     }
 }
 
-@keyframes arrowMove {
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(-50px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
+// @keyframes arrowMove {
+//     0%{
+//         transform: translateX(0);
+//     }
+//     50%{
+//         transform: translateX(-50px);
+//     }
+//     100%{
+//         transform: translateX(0);
+//     }
+// }
 
-@keyframes waveRotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(-30deg);
-        // transform-origin: 100% 50%;
-
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
+// @keyframes waveRotate{
+//     0%{
+//         transform: rotate(0deg);
+//     }
+//     50%{
+//         transform: rotate(-30deg);
+//     }
+//     100%{
+//         transform: rotate(0deg);
+//     }
+// }

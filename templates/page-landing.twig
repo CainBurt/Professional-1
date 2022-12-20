@@ -8,7 +8,7 @@
             image: theme.link ~ '/dist/images/image 49.png'
         } %}
         <div>
-            <h2 class="arrow">{{__('Who on<br />earth<br />are we?!','crowd')}}{% do action('inline_file',theme.link ~ '/dist/images/arrowgif 2.svg') %}</h2>
+            <h2 class="arrow">{{__('Who on<br />earth<br />are we?!','crowd')}}<img src="{{options.arrow_gif}}"/></h2>
             <p>{{__("We're Spreadshop. And we're on the planet to spread positive change.", 'crowd')}}</p>
             <a class='button' href='{{site.link}}/our-story'>{{__('Read story','crowd')}}</a>
         </div>
@@ -16,7 +16,7 @@
 
     <article class='nav-block'>
         <div class='waving'>
-            <h2>{{__("What's<br />the vibe?",'crowd')}}{% do action('inline_file',theme.link ~ '/dist/images/waving 2.svg') %}</h2>
+            <h2>{{__("What's<br />the vibe?",'crowd')}}<img src="{{options.waving_gif}}"/></h2>
             <p>{{__("We're going to Spreadchange in style!<br />Check it out...", 'crowd')}}</p>
             <a class='button' href='{{site.link}}/our-identity/logo'>{{__('View identity','crowd')}}</a>
         </div>

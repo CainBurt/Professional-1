@@ -1,11 +1,67 @@
 {
     "key": "group_63a18bea9fc9a",
-    "title": "Home Page Logo",
+    "title": "Home Page",
     "fields": [
         {
             "key": "field_63a18bea6b5a4",
-            "label": "Home Page Logo",
+            "label": "Home Page White Logo",
             "name": "home_page_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "url",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium",
+            "acfe_field_group_condition": 0,
+            "library": "all"
+        },
+        {
+            "key": "field_63a1a7e744e83",
+            "label": "Arrow GIF",
+            "name": "arrow_gif",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "url",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium",
+            "acfe_field_group_condition": 0,
+            "library": "all"
+        },
+        {
+            "key": "field_63a1a85944e84",
+            "label": "Waving GIF",
+            "name": "waving_gif",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -56,5 +112,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1671531536
+    "modified": 1671538802
 }
