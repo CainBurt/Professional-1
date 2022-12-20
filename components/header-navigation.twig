@@ -13,3 +13,23 @@
         {% do action('inline_file', theme.link ~ '/dist/images/Search icon.svg') %}
     </a>
 </nav>
+
+{% if fn('is_front_page')%}
+    <style>
+    header > nav {
+        background-color: transparent;
+        position: absolute;
+        color: #ffffff;
+    } 
+
+    header svg {
+        filter: brightness(0) invert(1);
+    }
+
+    header ul li ul li {
+        color: #000000
+    }
+    
+    </style>
+{% endif %}
+
