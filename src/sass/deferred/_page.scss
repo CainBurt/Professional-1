@@ -147,3 +147,14 @@ aside {
 .underline-title{
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+    .page-hero{
+        height: 25vw
+    }
+
+    figure > svg {
+        height: 10vw;
+        width: auto;
+    }
+  }
