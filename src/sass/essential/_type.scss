@@ -32,13 +32,13 @@ h4 {
     color: white;
     cursor: pointer;
     font-size:1.25rem;
-    padding: 1em 2.35em;
+    padding: 24px 50px;
     text-align: center;
     width: max-content;
     text-decoration: none;
     transition-property: border-radius, background-color;
     border-radius: 0.5em;
-    font-weight: 550;
+    font-weight: 500;
     @media (hover: hover) {
         &:hover {
             border-radius: 0.5em;

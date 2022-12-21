@@ -7,8 +7,16 @@
         margin: 0 auto;
     }
 
+    h2{
+        font-weight: 800;
+    }
+
     h2 + p {
         margin-bottom: 2em;
+    }
+
+    p{
+        font-size: 1.5rem;
     }
 
     ul {
@@ -23,6 +31,18 @@
             flex: 0 0 300px;
             transition-property: transform;
             overflow: hidden;
+        }
+        li:nth-child(7){
+            a{
+                span{
+                    opacity: 0.5;
+                    &::after{
+                        content: '\a (Coming Soon)';
+                        white-space: pre;
+                    }
+
+                }
+            }
         }
         a {
             color: white;
@@ -58,7 +78,12 @@
                     // text-decoration: underline;
                     // transform: translateY(-600%);
                     // animation: floatUp 0.3s ease-in-out 0.1s 1 forwards;
+                    &::before{
+                        content: 'Download\a';
+                        white-space: pre;
+                    }
                 }
+
             }
         }
     }
