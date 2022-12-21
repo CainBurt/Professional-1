@@ -1,4 +1,8 @@
+{% if fn('is_front_page')%}
 <article class='downloads' style='--bg-image: url("{{theme.link ~ "/dist/images/Union 44.svg"}}");'>
+{% else %}
+<article class='downloads' style='--bg-image: url("{{theme.link ~ "/dist/images/Union 44.svg"}}"); margin-top: 101px'>
+{% endif %}
     <h2>{{__('Spreadchange with style','crowd')}}</h2>
     <p>{{__('All the tools you need to build the Spreadshop vibe.','crowd')}}</p>
     <ul>

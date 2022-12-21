@@ -2,6 +2,9 @@ form.searchform {
     max-width: var(--narrow);
     margin: 0 auto;
     padding: var(--gutter);
+    @media only screen and (max-width: 768px) {
+        margin-top: 101px;
+    }
     div {
         display: flex;
     }
