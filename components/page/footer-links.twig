@@ -8,12 +8,12 @@
                 
                 <a class='left-link' href='{{link.link}}'>
                     {% if parent %}
-                        {{parent.title}}&nbsp;&nbsp;<i>&#x3c;</i>
+                        {{parent.title}}<i class="remove-mobile">&nbsp;&nbsp;&#x3c;</i>
                     {% else %}
                         {% if link.title == 'Here to <br/>Spreadchange'%}
-                            <div>{{__("Home", "crowd")}}&nbsp;&nbsp;<i>&#x3c;</i></div>
+                            <div>{{__("Home", "crowd")}}<i class="remove-mobile">&nbsp;&nbsp;&#x3c;</i></div>
                         {% else %}
-                            {{link.title}}&nbsp;&nbsp;<i>&#x3c;</i>
+                            {{link.title}}<i class="remove-mobile">&nbsp;&nbsp;&#x3c;</i>
                         {% endif %}
                     {% endif %}
                     {# {{parent ? parent.title : link.title}}&nbsp;&nbsp;<i>&#x3c;</i> #}
@@ -32,9 +32,9 @@
                 {% endif %}
                 
                 <a href='{{link.link}}'>
-                    <i>&#x3e;</i>&nbsp;&nbsp;{{parent ? parent.title : link.title}}
+                    <i class="remove-mobile">&#x3e;&nbsp;&nbsp;</i>{{parent ? parent.title : link.title}}
                     {% if parent %}
-                        <br/><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{link.title}}</span>
+                        <br/><span><span class="remove-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{{link.title}}</span>
                     {% endif %}
                 </a>
             {% else %}
