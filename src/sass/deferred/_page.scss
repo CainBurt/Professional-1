@@ -169,11 +169,17 @@ aside {
 
 @media only screen and (max-width: 768px) {
     .page-hero{
-        height: 25vw
+        height: 25vw;
+        margin-top: 101px;
+        h1{
+            padding: 5% 0 5% 5%;
+        }
+        figure{
+            --pos-y: 14vh !important;
+            > svg {
+                height: 10vw;
+                width: auto;
+            }
+        }
     }
-
-    figure > svg {
-        height: 10vw;
-        width: auto;
-    }
-  }
+}
