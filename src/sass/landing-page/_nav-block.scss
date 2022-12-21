@@ -87,3 +87,13 @@
 //         transform: rotate(0deg);
 //     }
 // }
+
+@media only screen and (max-width: 768px) {
+    .nav-block{
+        img {
+            flex: 1 1 0;
+            width: 400px;
+            max-width: 85vw !important;
+        }
+    }
+}
