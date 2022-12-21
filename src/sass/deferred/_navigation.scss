@@ -1,5 +1,5 @@
 header {
-    nav {
+    .desktop-nav {
         background-color: var(--beige);
         padding: 2.25rem var(--gutter);
         display: flex;
@@ -78,5 +78,93 @@ header {
         svg {
             height: 2rem;
         }
+    }
+}
+header{
+    .mobile-nav{
+        display: none;
+        .main-nav{
+            background-color: var(--beige);
+            padding: 2.25rem var(--gutter);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        
+        .links{
+            display: none;
+            background-color: var(--beige);
+            .menu-items{
+                > ul {
+                    display: flex;
+                    max-width: 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 5% 5% 0;
+                
+                >li:last-child{
+                    border-top: 1px solid black;
+                    padding-top: 10px;
+                    margin-top: 10px;
+                    > a{
+                        padding-bottom: 5%;
+                    }
+                }
+                    ul {
+                        padding-left: 1%;
+                        li{
+                            padding: 5px 0;
+                        }
+                        
+                        // border: 1px solid black;
+                    }
+        
+                    @media (hover: hover) {
+                        > li:hover {
+                            ul {
+                                opacity: 1;
+                                pointer-events: all;
+                            }
+                        }
+                    }
+                }
+                .bottom-bar{
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-between;
+                    padding: 5% 5%;
+                    .collections{
+                        margin: 0 !important;
+                    }
+                }
+
+                .collections {
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    padding: 10px 0 ;
+                    width: 100%;
+                }
+
+                .search{
+                    font-size: 1.25rem;
+                    padding-top: 10px;
+                    display: flex;
+                    svg{
+                        font-size: 2rem;
+                    }
+                }
+            } 
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-nav{
+        display: none !important;
+    }
+    .mobile-nav{
+        display: block !important;
     }
 }

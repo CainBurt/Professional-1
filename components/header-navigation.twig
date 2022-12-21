@@ -1,4 +1,4 @@
-<nav>
+<nav class="desktop-nav">
     {% include "logo.twig" %}
     {% include "menu.twig" with {
         menu: menu.items
@@ -14,23 +14,64 @@
     </a>
 </nav>
 
+<nav class="mobile-nav">
+    <div class="main-nav">
+        <a href='{{ site.url }}' title='{{ site.title }} Logo' class='logo'>
+            {% set image = TimberImage(logo) %}
+            <img src='{{ image.src }}' alt='{{ image.alt }}' />
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="showNav()">
+            {% do action('inline_file', theme.link ~ '/dist/images/icons8-menu.svg') %}
+        </a>
+    </div>
+    <div id="myLinks" class="links">
+        <div class="menu-items">
+            {% include "menu.twig" with {
+                menu: menu.items
+            } %}
+            <div class="bottom-bar">
+            {% if menu.creative_assets.show %}
+                <a href='{{menu.creative_assets.link}}' class='collections'>
+                    {% do action('inline_file', theme.link ~ '/dist/images/collection.svg') %}
+                    {{__('Creative assets', 'crowd')}}
+                </a>
+            {% endif %}
+                <a href='{{fn("get_search_link", " ")}}' class='search'>
+                    {% do action('inline_file', theme.link ~ '/dist/images/Search icon.svg') %}
+                    {{__('Search', 'crowd')}}
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 {% if fn('is_front_page')%}
     <style>
-    header > nav {
-        background-color: transparent;
+    header > .desktop-nav {
+        background-color: transparent !important;
         position: absolute;
         color: #ffffff;
         width: 100%;
     } 
 
-    header svg {
+    header > .desktop-nav svg {
         filter: brightness(0) invert(1);
     }
 
-    header ul li ul li {
+    header > .desktop-nav ul li ul li {
         color: #000000
     }
     
     </style>
 {% endif %}
 
+<script>
+function showNav() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
