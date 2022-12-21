@@ -61,5 +61,10 @@ a {
     @media only screen and (max-width: 768px) {
         font-size: 3rem !important;
     }
-    
+}
+
+.mobile-h2-size{
+    @media only screen and (max-width: 768px) {
+        font-size: 2.5rem !important;
+    }
 }
