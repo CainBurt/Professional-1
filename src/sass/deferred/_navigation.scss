@@ -82,7 +82,11 @@ header {
 }
 header{
     .mobile-nav{
+        position: fixed;
         display: none;
+        top: 0;
+        z-index: 99999;
+        width: 100%;
         .main-nav{
             background-color: var(--beige);
             padding: 2.25rem var(--gutter);
