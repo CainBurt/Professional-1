@@ -104,7 +104,10 @@
     }
 
     .left-link{
-        width: 400px;
+        @media only screen and (min-width: 768px) {
+            width: 400px;
+        }
+        
         div{
             float: right;
             max-height: 100%;
