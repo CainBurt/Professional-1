@@ -28,7 +28,7 @@ html{
         --h2: 4rem;
     }
 
-    @media only screen and (max-width: var(--mobile)) {
+    @media only screen and (max-width: 768px) {
         --h2: 3rem;
         --h2-lh: 1;
     }
