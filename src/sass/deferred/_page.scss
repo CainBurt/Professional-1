@@ -5,19 +5,45 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     gap: 7.8rem;
+    .mobile-link {
+        height: 60px;
+        margin-top: 10%;
+    }
     @media only screen and (max-width: 768px) {
+        align-items: center;
         gap: 3rem;
-        .remove-mobile{
-            display: none;
+        .mobile-link {
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 3rem;
+            height: 50px;
+            margin-top: 0;
         }
+        a {
+            i {
+                float: left;
+                line-height: 2.3 !important;
+                transform: translateY(-25px);
+            }
+            span{
+                padding-left: 0 !important;
+            }
+            &:first-child {
+                i {
+                    transform: translate(-7px, -25px);
+                }
+            }
+        }
+        
     }
     a {
         text-decoration: none;
         font-size: 3.5rem;
         font-family: 'Sombra', var(--system);
         line-height: 1;
+        margin-top: -24px;
         @media only screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
@@ -27,6 +53,8 @@
         span {
             font-size: 1.5rem;
             font-family:'neue-haas-grotesk-display', var(--system);
+            padding-left: 35px;
+            height: 0;
         }
         i {
             float: left;
@@ -38,7 +66,13 @@
                 float: right;
             }
         }
+        
+        &:last-child {
+            // padding-top: 2rem;
+        }
     }
+
+    
 
     divider {
         width: 1px;
@@ -52,11 +86,16 @@
 
     a + divider + a{
         flex: none;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
     }
 
     spacer, divider + a {
         flex: 1 1 0;
-        
+        @media only screen and (max-width: 768px) {
+            flex: none;
+        }
     }
 
     .right-spacer{
@@ -68,7 +107,15 @@
         width: 400px;
         div{
             float: right;
+            max-height: 100%;
+            flex: 1 1 0
             // padding-left: 100%
+        }
+        span{
+            padding-left: 13px;
+        }
+        @media only screen and (max-width: 768px) {
+            flex: none;
         }
     }
     
@@ -125,7 +172,7 @@ aside {
     top: 3rem;
     left: 0;
     padding: 0 var(--gutter) 0 0;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1200px) {
         display: none;
     }
     a {

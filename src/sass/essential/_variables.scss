@@ -4,6 +4,8 @@
 }
 
 html body {
+    width: auto!important; 
+    overflow-x: hidden!important;
     --wp--preset--font-size--small: 1rem;
     --wp--preset--font-size--medium: 1.5rem;
     --wp--preset--font-size--large: 2rem;
@@ -22,7 +24,7 @@ html body {
         --h2: 4rem;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: var(--mobile)) {
         --h2: 3rem;
         --h2-lh: 1;
     }
