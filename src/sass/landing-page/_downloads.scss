@@ -32,18 +32,6 @@
             transition-property: transform;
             overflow: hidden;
         }
-        li:nth-child(7){
-            a{
-                span{
-                    opacity: 0.5;
-                    &::after{
-                        content: '\a (Coming Soon)';
-                        white-space: pre;
-                    }
-
-                }
-            }
-        }
         a {
             color: white;
             width: 100%;
