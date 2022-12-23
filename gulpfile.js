@@ -18,7 +18,7 @@ const gulp = require('gulp'),
     changed = require('gulp-changed'),
     debug = require('gulp-debug'),
     replace = require('gulp-replace'),
-    theme = 'crowd-base-build', // Define the theme name for packaging
+    theme = 'spreadshop-brand', // Define the theme name for packaging
     paths = {
         sass: {
             essential: {
