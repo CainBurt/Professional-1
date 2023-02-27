@@ -2,7 +2,7 @@
     {% if logo.mime_type == 'images/svg+xml' %}
         {% do action('inline_file', logo.url) %}
     {% else %}
-        {% if fn('is_front_page')%}
+        {% if fn('is_front_page') or (post.title == "Our Sister Brands")%}
             <img src='{{options.home_page_logo}}' alt='{{ image.alt }}' />
         {% else %}
         {% set image = TimberImage(logo) %}

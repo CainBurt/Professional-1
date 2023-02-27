@@ -7,7 +7,54 @@
 		<main>
 			{{post.content}}
 		</main>
+		
 	</div>
     {% include "page/footer-links.twig" %}
 
+
+	{% if (post.title == "Our Sister Brands") %}
+		<style>
+			/* Nav Styling */
+			header > .desktop-nav {
+				background-color: transparent !important;
+				position: absolute;
+				color: #ffffff;
+				width: 100%;
+				z-index: 9999999;
+			} 
+
+			header > .desktop-nav svg {
+				filter: brightness(0) invert(1);
+			}
+
+			header > .desktop-nav ul li ul li {
+				color: #000000
+			}
+			/* Hero Styling */
+			.page-hero{
+            	background-color: #000000;
+        	}
+			/* Content Styling */
+			.inner{
+				justify-content: center;
+				background-color: #000000;
+				color: #ffffff;
+
+			}
+			aside{
+				display: none;
+			}
+			/* Footer Styling */
+			.page-links{
+				background-color: var(--beige) ;
+				color: #000000;
+				
+			}
+			.page-links divider{
+				background-color: #000000;
+			}
+			
+		</style>
+	{% endif %}
 {% endblock %}
+
