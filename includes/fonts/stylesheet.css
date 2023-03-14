@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Sombra-Light';
+    font-family: 'Sombra';
     src: url('Sombra-Light.woff2') format('woff2'),
         url('Sombra-Light.woff') format('woff'),
         url('Sombra-Light.svg#Sombra-Light') format('svg');
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'Sombra-Black';
+    font-family: 'Sombra';
     src: url('Sombra-Black.woff2') format('woff2'),
         url('Sombra-Black.woff') format('woff'),
         url('Sombra-Black.svg#Sombra-Black') format('svg');
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family: 'Sombra-Bold';
+    font-family: 'Sombra';
     src: url('Sombra-Bold.woff2') format('woff2'),
         url('Sombra-Bold.woff') format('woff'),
         url('Sombra-Bold.svg#Sombra-Bold') format('svg');
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'Sombra-Regular';
+    font-family: 'Sombra';
     src: url('Sombra-Regular.woff2') format('woff2'),
         url('Sombra-Regular.woff') format('woff'),
         url('Sombra-Regular.svg#Sombra-Regular') format('svg');
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'Sombra-Medium';
+    font-family: 'Sombra';
     src: url('Sombra-Medium.woff2') format('woff2'),
         url('Sombra-Medium.woff') format('woff'),
         url('Sombra-Medium.svg#Sombra-Medium') format('svg');
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-    font-family: 'Sombra-Thin';
+    font-family: 'Sombra';
     src: url('Sombra-Thin.woff2') format('woff2'),
         url('Sombra-Thin.woff') format('woff'),
         url('Sombra-Thin.svg#Sombra-Thin') format('svg');
