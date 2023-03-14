@@ -181,7 +181,7 @@ class StarterSite extends TimberSite {
             return;
         }
         // require_once custom acf blocks here
-        
+
         register_block_type( dirname(__FILE__) . '/includes/blocks/color-grid/block.json' );
         register_block_type( dirname(__FILE__) . '/includes/blocks/color-stack/block.json' );
     }

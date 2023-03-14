@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: 'Sombra Poster';
-    src: url('Sombra-Poster.woff2') format('woff2'),
+    src: url('Sombra-Poster.woff2') format('woff2')
         url('Sombra-Poster.woff') format('woff'),
         url('Sombra-Poster.svg#Sombra-Poster') format('svg');
     font-weight: 900;

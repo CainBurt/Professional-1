@@ -10,7 +10,7 @@
 }
 
 .color-grid > h4 {
-    padding: 0 1em;
+    /* padding: 0 1em; */
 }
 
 .color-grid .colors {
@@ -34,4 +34,12 @@
 .color-grid .colors > div h4 {
     margin: 0;
     padding: 1em;
+}
+
+.background-colors{
+    margin-top: 0 !important;
+}
+
+.background-colors > div{
+    aspect-ratio: unset !important;
 }
