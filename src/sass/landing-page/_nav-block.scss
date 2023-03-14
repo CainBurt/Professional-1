@@ -13,6 +13,10 @@ header > .desktop-nav ul li ul li {
     color: #000000
 }
 
+.text-body{
+    background-color: var(--beige);
+}
+
 .nav-block {
     background-color: var(--beige);
     padding: var(--gutter);
@@ -21,6 +25,8 @@ header > .desktop-nav ul li ul li {
     flex-flow: row wrap;
     align-items: center;
     gap: calc(2 * var(--gutter));
+    max-width: var(--home-width);
+    margin: 0 auto;
 
     &:has(> div:last-child) {
         justify-content: flex-start;

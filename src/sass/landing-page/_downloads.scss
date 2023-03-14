@@ -2,6 +2,8 @@
     text-align: center;
     background-color: var(--beige);
     padding: var(--gutter);
+    max-width: var(--home-width);
+    margin: 0 auto;
     p {
         max-width: 790px;
         margin: 0 auto;

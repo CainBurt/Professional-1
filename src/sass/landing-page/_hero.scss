@@ -5,15 +5,16 @@
     @media only screen and (max-width: 768px) {
         margin-top: 101px;
     }
+   
     img,>div {
         grid-area: 1/1;
+        max-width: 100%;
     }
     > div {
         font-size: var(--gutter);
         padding: 1em;
         align-self: end;
         position: relative;
-
         svg {
             top: 30%;
             position: absolute;
