@@ -11,9 +11,10 @@ body {
 }
 
 h1,h2,h3 {
-    font-family: 'Sombra', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--sombra-black);
     letter-spacing: -0.05em;
     margin: 0.5em 0;
+    font-weight: 100;
 }
 
 h2 {
@@ -37,18 +38,15 @@ h4 {
     width: max-content;
     text-decoration: none;
     transition-property: border-radius, background-color;
-    border-radius: 0.5em;
     font-weight: 500;
     @media (hover: hover) {
         &:hover {
-            border-radius: 0.5em;
             background-color: var(--orange);
         }
     }
     &:focus-within {
         outline: 2px solid var(--orange);
         outline-offset: 1px;
-        border-radius: 0.5em;
         background-color: var(--orange);
     }
 }
