@@ -40,6 +40,11 @@ const gulp = require('gulp'),
                 src: 'src/sass/search-page/**/*.scss',
                 name: 'search-page.css',
                 dist: 'dist/styles'
+            },
+            searchPage: {
+                src: 'src/sass/spreadconnect-page/**/*.scss',
+                name: 'spreadconnect-page.css',
+                dist: 'dist/styles'
             }
         },
         js: {

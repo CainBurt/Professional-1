@@ -1,0 +1,90 @@
+/* Nav Styling */
+header > .desktop-nav {
+    background-color: transparent !important;
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    z-index: 9999999;
+} 
+
+header > .desktop-nav svg {
+    filter: brightness(0) invert(1);
+}
+
+header > .desktop-nav ul li ul li {
+    color: var(--black)!important;
+}
+/* Hero Styling */
+.page-hero{
+    background-color: var(--black) !important;
+}
+/* Content Styling */
+.inner{
+    justify-content: center;
+    background-color: var(--black) !important;
+    color: #ffffff;
+    .full-width-image{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+    
+        img{
+            width: 100vw;
+        }
+    }
+
+    .connect-lines{
+        margin-top: -50vw;
+        z-index: -99999;
+    }
+
+    .third-width-image{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        // max-width: 67.5%;
+        // padding-bottom: 45vw;
+        img{
+            width: 100%;
+            margin-left: 30vw;
+            @media only screen and (max-width: 1000px) {
+                margin-left: 10vw ;
+                
+            }
+            @media only screen and (max-width: 768px) {
+                margin-left: 5vw ;
+                
+            }
+        }
+        
+    }
+    .spacer{
+        height: 0;
+        padding-bottom: 125%; /* for a 1.25 height/width ratio */
+    }
+}
+aside{
+    display: none;
+}
+/* Footer Styling */
+.page-links{
+    background-color: var(--beige) !important;
+    color: var(--black) !important;
+    
+}
+.page-links divider{
+    background-color: var(--black) !important;
+}
+
+.color-grid {
+    border: 1px solid white !important;
+
+}
+
+.remove-margin{
+    margin: 0;
+}
