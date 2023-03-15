@@ -88,3 +88,15 @@ aside{
 .remove-margin{
     margin: 0;
 }
+
+h1, h2, h3, main{
+    font-family: 'Ubuntu', var(--system) !important;
+}
+
+h4{
+    font-weight: 400;
+}
+
+.roboto{
+    font-family: 'Roboto', var(--system) !important;
+}
