@@ -1,3 +1,8 @@
+body {
+    width: auto!important; 
+    overflow-x: hidden!important
+} 
+
 /* Nav Styling */
 header > .desktop-nav {
     background-color: transparent !important;
@@ -50,7 +55,7 @@ header > .desktop-nav ul li ul li {
         // padding-bottom: 45vw;
         img{
             width: 100%;
-            margin-left: 30vw;
+            margin-left: 32vw;
             @media only screen and (max-width: 1000px) {
                 margin-left: 10vw ;
                 
@@ -64,7 +69,15 @@ header > .desktop-nav ul li ul li {
     }
     .spacer{
         height: 0;
-        padding-bottom: 125%; /* for a 1.25 height/width ratio */
+        padding-bottom: 40vw; /* for a 1.25 height/width ratio */
+        @media only screen and (max-width: 1549px) {
+            padding-bottom: 50vw;
+            
+        }
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 50%;
+            
+        }
     }
 }
 aside{
@@ -93,10 +106,18 @@ h1, h2, h3, main{
     font-family: 'Ubuntu', var(--system) !important;
 }
 
+main{
+    z-index: 1;
+}
+
 h4{
     font-weight: 400;
 }
 
 .roboto{
     font-family: 'Roboto', var(--system) !important;
+}
+
+.word-break{
+    word-wrap: break-word;
 }
