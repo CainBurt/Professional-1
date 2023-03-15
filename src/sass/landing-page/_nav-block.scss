@@ -1,18 +1,3 @@
-header > .desktop-nav {
-    background-color: transparent !important;
-    position: absolute;
-    color: #ffffff;
-    width: 100%;
-} 
-
-header > .desktop-nav svg {
-    filter: brightness(0) invert(1);
-}
-
-header > .desktop-nav ul li ul li {
-    color: #000000
-}
-
 .text-body{
     background-color: var(--beige);
 }

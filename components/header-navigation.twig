@@ -44,7 +44,25 @@
         </div>
     </div>
 </nav>
-
+{% if fn('is_front_page')%}
+-    <style>
+-    header > .desktop-nav {
+-        background-color: transparent !important;
+-        position: absolute;
+-        color: #ffffff;
+-        width: 100%;
+-    } 
+-
+-    header > .desktop-nav svg {
+-        filter: brightness(0) invert(1);
+-    }
+-
+-    header > .desktop-nav ul li ul li {
+-        color: #000000
+-    }
+-    
+-    </style>
+-{% endif %}
 <script>
 function showNav() {
     var x = document.getElementById("myLinks");
