@@ -121,3 +121,9 @@ h4{
 .word-break{
     word-wrap: break-word;
 }
+
+.center-img{
+    img{
+        margin: 0 auto;
+    }
+}
