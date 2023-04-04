@@ -127,3 +127,24 @@ h4{
         margin: 0 auto;
     }
 }
+
+.remove-top-margin{
+    .color-grid{
+        .colors{
+            margin-top: 0rem;
+        }
+    }
+}
+
+.outline-last{
+    .color-grid{
+        .colors{
+            div{
+                &:last-child{
+                    border: 1px solid white;
+                }
+            }
+        }
+       
+    }
+}
