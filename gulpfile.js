@@ -81,7 +81,7 @@ const gulp = require('gulp'),
         },
         fonts: {
             src: 'src/fonts/**/*',
-            dist: 'dist/fonts'
+            dist: 'dist/fonts',
         },
         cache: {
             src: './includes/cache_bust.php',
@@ -95,7 +95,9 @@ const gulp = require('gulp'),
             'dist/**/*',
             'components/**/*.twig',
             'templates/**/*.twig',
-            'login/**/*'
+            'login/**/*',
+            'includes/fonts/**/*',
+            'includes/fonts/*',
         ],
         acf: {
             src: 'includes/toggle_acf_edit.php',
